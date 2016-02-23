@@ -63,7 +63,6 @@ header nav .menu {
 header nav .menu li {
 	display: inline-block;
 
-	padding: 0.3em;
 	font-size: 1.5em;
 	text-transform: uppercase;
 	background-color: rgba(34,34,34,0.6);
@@ -72,6 +71,12 @@ header nav .menu li {
 }
 header nav .menu li:hover {
 	background-color: #24506D;
+}
+header nav .menu li a, header nav .menu li a:hover {
+	color: inherit;
+	padding: 0.3em;
+	text-decoration: none;
+	display: block;
 }
 header nav .menu.menu-left {
 	float: left;
