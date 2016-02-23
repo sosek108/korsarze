@@ -29,13 +29,19 @@ header {
 header #jumbo {
 	display: block;
 	width: 100%;
+	top: 0;
+	z-index: 0;
+}
+header #jumbo.jumbo-main {
 	height: 61vh;
 	background: url('../images/jumbo-image2.jpg');
 	background-size: 100%;
 	background-position: bottom;
 	position: relative;
-	top: 0;
-	z-index: 0;
+}
+header #jumbo.jumbo-secondary {
+	height: 21vh;
+	background: url('../images/jumbo-image3.jpg');
 }
 header nav {
 	position: fixed;
@@ -147,4 +153,24 @@ header nav #logo.scrolled, header nav #logo.small {
 header nav.scrolled {
 	background-color: rgba(34,34,34,0.6);
 	transition: all ease 0.5s;
+}
+
+#schedule .row .info {
+	font-size: 1.2em;
+	text-align: center;
+	font-family: "Lato Light";
+	text-transform: uppercase;
+}
+#schedule .row .info .result {
+	font-size: 2em;
+	display: block;
+	font-family: "Lato Bold";
+}
+#schedule .row {
+	margin-bottom: 1.5em;
+}
+#schedule .date {
+	text-align: center;
+	margin-bottom: 0;
+	font-style: italic;
 }

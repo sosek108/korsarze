@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title>Korsarze Trójmiasto Lacrosse</title>
+	<meta charset="UTF-8">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<header>
+		<nav class="animate-on-scroll">
+			<ul class="menu menu-left">
+				<li>O lacrosse</li>
+				<li>Terminarz</li>
+				<li>Treningi</li>
+			</ul>
+			<ul class="menu menu-right">
+				<li>Rekrutacja</li>
+				<li>Galeria</li>
+				<li>Facebook</li>
+			</ul>
+			<div id="logo" class="small"><img src="images/logo.png" alt="Korsarze Trójmiasto"></div>
+		</nav>
+		<div id="jumbo" class="jumbo-secondary"></div>
+	</header>
+	
+	<div id="main" class="container">
+		<div class="schedule clearfix">
+			<h1>Terminarz meczy</h1>
+			
+			<div id="schedule" class="col-md-8 col-md-offset-2">
+				<div class="row clearfix">
+					<p class="date row">12-12.2016</p>
+					<img class="col-md-3 pull-left" src="http://placehold.it/125x75/00a1e0/ffffff?text=Korsarze">
+					<span class="col-md-6 info">Korsarze Trójmiasto <span class="result">15 : 6</span> Kosynierzy Wrocław</span>
+					<img class="col-md-3 pull-right" src="http://placehold.it/125x75/ff7800/ffffff?text=Kosy">
+				</div>
+				<div class="row clearfix">
+					<p class="date row">21.11.2016</p>
+					<img class="col-md-3 pull-left" src="http://placehold.it/125x75/00a1e0/ffffff?text=Korsarze">
+					<span class="col-md-6 info">Korsarze Trójmiasto <span class="result">3 : 14</span> Kosynierzy Wrocław</span>
+					<img class="col-md-3 pull-right" src="http://placehold.it/125x75/ff7800/ffffff?text=Kosy">
+				</div>
+			</div>
+
+		</div>
+	
+	</div>
+	<footer>
+		Copyright 2016 - Korsarze Trójmiasto. Created by <a href="http://sosek.pl" target="_blank">Hubert Sosiński</a>
+	</footer>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#logo").click(function() {
+				$(this).addClass("scrolled");
+				
+			})
+			$(window).scroll(function(event) {
+				console.log($(window).scrollTop());
+				if ($(window).scrollTop() == 0)
+					$(".animate-on-scroll").removeClass("scrolled");
+				else
+					$(".animate-on-scroll").addClass("scrolled");
+			})
+		});
+	</script>
+</body>
+</html>
