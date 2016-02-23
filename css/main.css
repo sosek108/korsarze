@@ -1,0 +1,150 @@
+@font-face {
+	font-family: "Lato Bold";
+	src: url(../fonts/Lato-Bold.ttf);
+}
+@font-face {
+	font-family: "Lato Light";
+	src: url(../fonts/Lato-Light.ttf);
+}
+@font-face {
+	font-family: "Lato Regular";
+	src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+	font-family: "Droid Bold";
+	src: url(../fonts/DroidSerif-Bold.ttf);
+}
+@font-face {
+	font-family: "Droid Regular";
+	src: url(../fonts/DroidSerif-Regular.ttf);
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica";
+}
+header {
+	position: relative;
+}
+header #jumbo {
+	display: block;
+	width: 100%;
+	height: 61vh;
+	background: url('../images/jumbo-image2.jpg');
+	background-size: 100%;
+	background-position: bottom;
+	position: relative;
+	top: 0;
+	z-index: 0;
+}
+header nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+	z-index: 20;
+}
+header nav .menu {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Lato Regular";
+}
+header nav .menu li {
+	display: inline-block;
+
+	padding: 0.3em;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	background-color: rgba(34,34,34,0.6);
+	color: white;
+
+}
+header nav .menu li:hover {
+	background-color: #24506D;
+}
+header nav .menu.menu-left {
+	float: left;
+}
+header nav .menu.menu-right {
+	float: right;
+}
+header nav #logo {
+	width: 180px;
+	height: 180px;
+
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	transition: all ease 0.5s;
+}
+header nav #logo img {
+	width: 100%;
+	height: 100%;
+}
+#main {
+	border-bottom: solid rgb(221,221,221) 2px;
+	padding-bottom: 30px;
+}
+#main a {
+	color: #24506D;
+}
+#main a:hover {
+	color: black;
+}
+footer {
+	height: 30vh;
+	padding-top: 30px;
+	margin-top: 30px;
+	background-color: #00070B;
+	color: rgba(255,255,255,0.6);
+	text-align: center;
+}
+footer a {
+	color: inherit;
+	font-style: italic;
+	text-decoration: underline;
+}
+footer a:hover {
+	color: white;
+	transition: color ease 0.5s;
+}
+
+.call-for-action {
+	width: 100%;
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
+	margin-bottom: 0.6em;
+	margin-top: 0.6em;
+	background-color: #24506D;
+	color: white;
+	font-size: 3rem;
+	font-family: "Lato Bold";
+	text-transform: uppercase;
+}
+
+h1 {
+	font-family: "Lato Regular";
+	text-transform: uppercase;
+	text-align: center;
+
+	margin-left: 15%;
+	margin-right: 15%;
+	padding-bottom: 0.3em;
+	border-bottom: solid rgb(221,221,221) 1px;
+}
+
+header nav #logo.scrolled, header nav #logo.small {
+	width: 82px;
+	height: 82px;
+	transition: all ease 0.5s;
+}
+header nav.scrolled {
+	background-color: rgba(34,34,34,0.6);
+	transition: all ease 0.5s;
+}
