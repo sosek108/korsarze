@@ -183,3 +183,18 @@ header nav.scrolled {
 	margin-bottom: 0;
 	font-style: italic;
 }
+
+#gallery-list .list .entry {
+	margin-bottom: 2em;
+}
+#gallery-list .list .entry .description {
+	text-align: center;
+}
+#gallery-list .list .entry .description h3 {
+	margin-top: 0.4em;
+	margin-bottom: 0.2em;
+}
+#gallery-list .list .entry .description .date {
+	font-family: "Helvetica";
+	font-style: italic;
+}
