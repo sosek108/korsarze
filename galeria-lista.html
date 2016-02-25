@@ -1,0 +1,117 @@
+<html>
+<head>
+	<title>Korsarze Trójmiasto Lacrosse</title>
+	<meta charset="UTF-8">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/photoswipe.min.js"></script>
+	<script src="js/photoswipe-ui.min.js"></script>
+	<script src="js/gallery.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/photoswipe.css">
+	<link rel="stylesheet" type="text/css" href="css/photoswipe-default-skin/default-skin.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<header>
+		<nav class="animate-on-scroll">
+			<ul class="menu menu-left">
+				<li><a href="o-lacrosse.html">O lacrosse</a></li>
+				<li><a href="terminarz.html">Terminarz</a></li>
+				<li><a href="treningi.html">Treningi</a></li>
+			</ul>
+			<ul class="menu menu-right">
+				<li><a href="#">Rekrutacja</a></li>
+				<li><a href="galeria-lista.html">Galeria</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+			</ul>
+			<div id="logo" class="small"><a href="index.html"><img src="images/logo.png" alt="Korsarze Trójmiasto"></a></div>
+		</nav>
+		<div id="jumbo" class="jumbo-secondary"></div>
+	</header>
+	
+	<div id="main" class="container">
+		<section id="gallery-list">
+			<h1>Wszystekie galerie</h1>
+			<div id="list-container" class="list clearfix">
+				
+			</div>
+		</section>
+	</div>
+	<footer>
+		<div class="copyright">Copyright 2016 - Korsarze Trójmiasto. Created by <a href="http://sosek.pl" target="_blank">Hubert Sosiński</a></div>
+		<div class="social"><a href="#"><i class="fa fa-facebook"></i></a></div>
+	</footer>
+	<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

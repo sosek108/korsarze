@@ -143,8 +143,10 @@ footer .social {
 	text-transform: uppercase;
 }
 
-h1 {
+h1, h2 {
 	font-family: "Lato Regular";
+}
+h1 {
 	text-transform: uppercase;
 	text-align: center;
 
@@ -212,4 +214,23 @@ header nav.scrolled {
 		height: 128px;
 		width: 100%;
 	}
+}
+
+
+#contact .table{
+	margin-top: 1em;
+}
+#contact .table tr td:nth-child(2) {
+	text-align: left;
+}
+#contact .table td {
+	border: none;
+	vertical-align: middle;
+}
+#contact .table td i {
+	font-size: 2em;
+}
+.reverse {
+  	unicode-bidi: bidi-override;
+	direction: rtl;
 }
