@@ -184,8 +184,13 @@ header nav.scrolled {
 	font-style: italic;
 }
 
+
 #gallery-list .list .entry {
+	margin: auto;
 	margin-bottom: 2em;
+}
+#gallery-list .list .entry img, #gallery-list .list .entry h3 {
+	cursor: pointer;
 }
 #gallery-list .list .entry .description {
 	text-align: center;
@@ -197,4 +202,14 @@ header nav.scrolled {
 #gallery-list .list .entry .description .date {
 	font-family: "Helvetica";
 	font-style: italic;
+}
+
+@media screen and (min-width: 990px) {
+	#gallery-list .list .entry {
+		height: 188px;
+	}
+	#gallery-list .list .entry img {
+		height: 128px;
+		width: 100%;
+	}
 }
