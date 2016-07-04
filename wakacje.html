@@ -1,0 +1,81 @@
+<html>
+<head>
+	<title>Wakacje - Korsarze Trójmiasto Lacrosse</title>
+	<meta charset="UTF-8">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<header>
+		<nav class="animate-on-scroll">
+			<ul class="menu menu-left">
+				<li><a href="o-lacrosse.html">O lacrosse</a></li>
+				<li><a href="terminarz.html">Terminarz</a></li>
+				<li><a href="treningi.html">Treningi</a></li>
+			</ul>
+			<ul class="menu menu-right">
+				<li><a href="#">Rekrutacja</a></li>
+				<li><a href="galeria-lista.html">Galeria</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+			</ul>
+			<div id="logo" class="small"><a href="index.html"><img src="images/logo.png" alt="Korsarze Trójmiasto"></a></div>
+		</nav>
+		<div id="jumbo" class="jumbo-secondary"></div>
+	</header>
+	
+	<div id="main" class="container">
+		<div id="description">
+			<h1>Jesteśmy na wakacjach</h1>
+			<div class="row">
+				<img class="col-md-4 thumbnail" src="http://placehold.it/1280x800">
+				<div class="col-md-8">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 	<br>
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br>
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo<br>
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse<br>
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non<br>
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br>
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo<br>
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse<br>
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non<br>
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+				</div>
+			</div>
+			
+		</div>
+		<div id="map" class="row">
+			<h1>Jak dojechać na trening?</h1>
+			<div class="thumbnail">
+				<img src="http://placehold.it/1280x400?text=Mapa dojazdu">
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="copyright">Copyright 2016 - Korsarze Trójmiasto. Created by <a href="http://sosek.pl" target="_blank">Hubert Sosiński</a></div>
+		<div class="social"><a href="#"><i class="fa fa-facebook"></i></a></div>
+	</footer>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#logo").click(function() {
+				$(this).addClass("scrolled");
+				
+			})
+			$(window).scroll(function(event) {
+				console.log($(window).scrollTop());
+				if ($(window).scrollTop() == 0)
+					$(".animate-on-scroll").removeClass("scrolled");
+				else
+					$(".animate-on-scroll").addClass("scrolled");
+			})
+		});
+	</script>
+</body>
+</html>
